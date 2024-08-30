@@ -3,3 +3,14 @@ tmp*/
 
 # Environment variables
 .env
+
+# Build data
+*.egg-info
+
+*/__pycache__
+
+# dbt
+analytics_dbt/target/
+analytics_dbt/dbt_packages/
+analytics_dbt/logs/
+logs/
