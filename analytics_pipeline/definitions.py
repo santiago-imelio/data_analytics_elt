@@ -11,5 +11,6 @@ airbyte_instance = AirbyteResource(
 airbyte_assets = load_assets_from_airbyte_instance(airbyte_instance)
 
 defs = Definitions(
-    assets=[airbyte_assets]
+    assets=[airbyte_assets],
+    resources={'ab_instance': airbyte_instance}
 )
